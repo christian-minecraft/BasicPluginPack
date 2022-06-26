@@ -1,0 +1,155 @@
+name: BasicPluginPack
+main: com.gmail.jackdonofrio99.BasicPluginPack
+version: 1.0
+api-version: 1.12.2
+author: Jack1q
+commands:
+   joindate:
+      description: displays a player's joindate.
+      permission: basicpluginpack.joindate
+      usage: /joindate (username)
+   sethome:
+      description: sets a player's home.
+      permission: basicpluginpack.sethome
+      usage: /sethome
+   home:
+      description: teleports player home
+      permission: basicpluginpack.home
+      usage: /home
+   wherehome:
+      description: gives player home location details
+      permission: basicpluginpack.wherehome
+      usage: /wherehome
+   mute:
+      description: mutes players who are misbehaving
+      permission: basicpluginpack.mute
+      usage: /mute (username)
+   unmute:
+      description: unmutes players who have been muted
+      permission: basicpluginpack.unmute
+      usage: /unmute (username)
+   setspawn: 
+      description: sets the world spawn at current location
+      permission: basicpluginpack.setspawn
+      usage: /setspawn
+   spawn:
+      description: teleports player to spawn
+      permission: basicpluginpack.spawn
+      usage: /spawn
+   lastseen:
+      description: tells you when a player last logged in
+      permission: basicpluginpack.lastseen
+      usage: /lastseen (player)
+   msg: 
+      description: sends private message to player
+      permission: basicpluginpack.msg
+      usage: /msg (player) (message)
+   reply:
+      description: responds to last player to msg you
+      permission: basicpluginpack.reply
+      usage: /reply (message)
+   ignore:
+      description: ignores a player
+      permission: basicpluginpack.ignore
+      usage: /ignore (player)
+   unignore:
+      description: unignores a player
+      permission: basicpluginpack.unignore
+      usage: /unignore (player)
+   ignorelist:
+      description: displays list of players you are ignoring
+      permission: basicpluginpack.ignorelist
+      usage: /ignorelist
+   list:
+      description: displays list of players online
+      permission: basicpluginpack.list
+      usage: /list
+   warp:
+      description: warps to a set point
+      permission: basicpluginpack.warp
+      usage: /warp (warp name)
+   setwarp:
+      description: sets player warp to current location
+      permission: basicpluginpack.setwarp
+      usage: /setwarp (warp name)
+   warplist:
+      description: sends list of all set warps
+      permission: basicpluginpack.warplist
+      usage: /warplist
+   tpa:
+      description: sends teleport request to player
+      permission: basicpluginpack.tpa
+      usage: /tpa (player)
+   tpaccept:
+      description: accepts teleport request
+      permission: basicpluginpack.tpaccept
+      usage: /tpaccept
+   tpdeny:
+      description: denies teleport request
+      permission: basicpluginpack.tpdeny
+      usage: /tpdeny
+
+permissions:
+   basicpluginpack.joindate: 
+      description: Allows you to see a player's join date.
+      default: true
+   basicpluginpack.sethome: 
+      description: Allows you to set a home warp location
+      default: true
+   basicpluginpack.home: 
+      description: Allows you to teleport to your set home location.
+      default: true
+   basicpluginpack.wherehome: 
+      description: Allows you to see details about set home location.
+      default: true
+   basicpluginpack.mute:
+      description: Allows you to mute players.
+      default: op
+   basicpluginpack.unmute:
+      description: Allows you to unmute players.
+      default: op
+   basicpluginpack.setspawn:
+      description: Allows you to set spawn location.
+      default: op
+   basicpluginpack.spawn:
+      description: Allows you to teleport to spawn.
+      default: true
+   basicpluginpack.lastseen:
+      description: Allows you to see when a player last joined
+      default: true
+   basicpluginpack.msg:
+      description: Allows you to send a message to a player
+      default: true
+   basicpluginpack.reply:
+      description: Allows you to reply to a player
+      default: true
+   basicpluginpack.ignore:
+      description: Allows you to ignore a player
+      default: true
+   basicpluginpack.unignore:
+      description: Allows you to unignore a player
+      default: true
+   basicpluginpack.ignorelist:
+      description: Allows you to see a list of players you're ignoring
+      default: true
+   basicpluginpack.list:
+      description: Allows you to see a list of players online
+      default: true
+   basicpluginpack.warp:
+      description: Allows you to warp to a set point
+      default: true
+   basicpluginpack.setwarp:
+      description: Allows you to set a warp point at your current location
+      default: op
+   basicpluginpack.warplist:
+      description: Allows you to see all warps
+      default: true
+   basicpluginpack.tpa:
+      description: Allows you to send tp requests
+      default: true
+   basicpluginpack.tpaccept:
+      description: Allows you to accept tp requests
+      default: true
+   basicpluginpack.tpdeny:
+      description: Allows you to deny tp requests
+      default: true
